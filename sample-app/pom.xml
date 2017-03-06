@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.indysfug</groupId>
+    <artifactId>sample-app</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>pokemon-sample-app</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.indysfug</groupId>
+            <artifactId>pokemon-autoconfigurer</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.indysfug</groupId>
+            <artifactId>pokemon-spring-boot-custom-starter</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>com.indysfug</groupId>-->
+            <!--<artifactId>pokemon-spring-boot-pokeapi-starter</artifactId>-->
+            <!--<version>1.0.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!--
+            Everything we do is spring-boot based, provided by default. Since
+            we are extending the spring-boot-parent, no need for the repackage
+            goal.
+            -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
