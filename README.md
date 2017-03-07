@@ -7,3 +7,5 @@ Attempting to show how different implementations can be loaded via Spring Boot a
 `./mvnw clean package`
 
 `java -jar sample-app/target/sample-app-1.0.0-SNAPSHOT.jar <pokemonIdNumber>`
+
+[Meetup Slides - http://bit.ly/indysfug-20170307](http://bit.ly/indysfug-20170307)
